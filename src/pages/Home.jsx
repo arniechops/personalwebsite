@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row flex-none align-top">
             <SocialsButton icon={<FaInstagram color='#dc2626'/>}/>
-            <SocialsButton icon={<FaGithub color='#fffbeb'/>}/>
+            <SocialsButton icon={<FaGithub color='#fffbeb'/>} url={'https://github.com/arniechops'} />
             <SocialsButton icon={<FaLinkedin color='#0369a1'/>}/>
           </div>
         </div>
