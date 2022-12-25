@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.neumorphic-up {
+  border-radius: 8px;
+  background: #0f172a;
+  box-shadow:  6px 6px 13px #060a12,
+             -6px -6px 13px #182442;
+}
+
+.neumorphic-down {
+  border-radius: 4px;
+  background: #0f172a;
+  box-shadow: inset 6px 6px 13px #090e19,
+              inset -6px -6px 13px #15203b;
+}
+
+.neumorphic-up-round {
+  border-radius: 32px;
+  background: #0f172a;
+  box-shadow:  6px 6px 11px #060a12,
+              -6px -6px 11px #182442;
+}
+
+.neumorphic-down-round {
+  border-radius: 32px;
+background: #0f172a;
+box-shadow: inset 6px 6px 11px #060a12,
+            inset -6px -6px 11px #182442;
+}
