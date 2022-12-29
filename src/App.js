@@ -3,6 +3,7 @@ import AboutMe from './pages/AboutMe';
 import Book from './pages/Book';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Temp from './pages/Temp';
 
 function App() {
 

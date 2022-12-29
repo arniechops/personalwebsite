@@ -1,6 +1,7 @@
 import SidebarButton from "../components/SidebarButton";
-import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGmai, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { IoIosPerson, IoMdBook, IoMdBulb, IoMdMail } from 'react-icons/io'
+import { SiGmail } from 'react-icons/si'
 import { useEffect, useState } from "react";
 import Typewriter from 'typewriter-effect'
 import SocialsButton from "../components/SocialsButton";
@@ -13,9 +14,7 @@ export default function Home() {
     <div className="flex font-mono">
       <div className="w-30 p-5 fixed h-screen flex flex-col top-0 left-0 justify-center">
         <SidebarButton icon={<IoIosPerson color="white" width/>} text={"/about"}/>
-        <SidebarButton icon={<IoMdBook color="white"/>} text={"/book"}/>
         <SidebarButton icon={<IoMdBulb color="white"/>} text={"/projects"}/>
-        <SidebarButton icon={<IoMdMail color="white"/>} text={"/contact"}/>
       </div>
       <div className="bg-slate-900 h-screen w-screen pl-36 p-5 flex-col">
         <div className=" ">
@@ -36,10 +35,16 @@ export default function Home() {
                 />
               </div>
           </div>
-          <div className="flex flex-row flex-none align-top">
-            <SocialsButton icon={<FaInstagram color='#dc2626'/>}/>
-            <SocialsButton icon={<FaGithub color='#fffbeb'/>} url={'https://github.com/arniechops'} />
-            <SocialsButton icon={<FaLinkedin color='#0369a1'/>}/>
+          <div className="flex flex-row flex-none align-top space-x-6">
+            <div className="group relative">
+              <SocialsButton size={14} icon={<SiGmail color='#dc2626'/>}/>
+              <span className="bg-slate-800 text-white rounded-full pl-3 pr-3 p-1 w-auto min-w-max absolute -bottom-12
+                transition-all scale-0 duration-100 group-hover:scale-100 z-20">
+                  arnav.chopra@gmail.com
+              </span>
+            </div>
+            <SocialsButton size={14} icon={<FaGithub color='#fffbeb'/>} url={'https://github.com/arniechops'} />
+            <SocialsButton size={14} icon={<FaLinkedin color='#0369a1'/>} url={'https://www.linkedin.com/in/arnav-chopra-857472210/'}/>
           </div>
         </div>
       </div>

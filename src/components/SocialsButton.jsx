@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-export default function SocialsButton({icon, url}) {
+export default function SocialsButton({icon, url, size}) {
     const up = `relative flex items-center justify-center
-    h-14 w-14 mr-6
+    h-${size} w-${size} p-4 space-x-4
     hover:cursor-pointer neumorphic-up-round`
 
     const down = `relative flex items-center justify-center
-    h-14 w-14 mr-6
+    h-${size} w-${size} p-4 space-x-4
     hover:cursor-pointer neumorphic-down-round`
 
     const [mouseDown, setMouseDown] = useState(false)
