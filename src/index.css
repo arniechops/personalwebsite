@@ -64,3 +64,17 @@
   box-shadow: inset 6px 6px 20px #060a12,
               inset -6px -6px 20px #182442;
 }
+
+.project-date::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #334155;
+  left: 0;
+  margin-left: -10px;
+  border: 3px solid #0f172a;
+  z-index: 100;
+  /* transform: translate(-510%, 0); */
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FaInstagram, FaGithub, FaLinkedin, FaTrophy } from 'react-icons/fa'
 import SocialsButton from './SocialsButton'
 import '../index.css'
@@ -9,17 +9,14 @@ export default function ProjectComponent({width=null, link, date, description, a
   const parse = require('html-react-parser');
 
   return (
-    <div className='h-screen flex items-center snap-start z-50'>
-      <div className='flex items-start mt-4 space-x-4 relative'>
-        <div className='flex absolute right-[40rem] space-x-4 mr-3'>
-          <span className="bg-slate-800 text-white rounded-full pl-3 pr-3 p-1
-          w-auto min-w-max z-20 neumorphic-tag">
-              {date}
-          </span>
-          <div className='w-4 h-4 rounded-full bg-slate-700 block mt-2'>
-          </div>
-        </div>
-        <div className={`rounded-md w-[${width ? width : '24rem'}] text-white
+    <div className='h-screen flex items-center snap-start'>
+      <div className='flex items-start mt-4 relative'>
+        <span className={`bg-slate-800 text-white rounded-full pl-3 pr-3 p-1
+        w-auto min-w-max neumorphic-tag project-date
+        -ml-[6rem] mr-10`}>
+            {date}
+        </span>
+        <div className={`rounded-md w-[40rem] text-white
         bg-slate-800 p-6 neumorphic-project-card ml-2`}>
           <div className='flex items-center mb-3 justify-between'>
             <div className='text-2xl'>{name}</div>

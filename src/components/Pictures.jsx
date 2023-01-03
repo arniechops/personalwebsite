@@ -18,6 +18,15 @@ export default function Pictures() {
             <img className='shrink-0 bg-white w-40 rounded-md' src={require('../pages/arnavpic.jpg')}></img>
         </div>
         <div className='snap-center shrink-0'>
+            <img className='shrink-0 bg-white w-40 rounded-md' src={require('../pages/arnavpic.jpg')}></img>
+        </div>
+        <div className='snap-center shrink-0'>
+            <img className='shrink-0 bg-white w-40 rounded-md' src={require('../pages/arnavpic.jpg')}></img>
+        </div>
+        <div className='snap-center shrink-0'>
+            <img className='shrink-0 bg-white w-40 rounded-md' src={require('../pages/arnavpic.jpg')}></img>
+        </div>
+        <div className='snap-center shrink-0'>
             <div className='shrink-0 w-1'>
 
             </div>

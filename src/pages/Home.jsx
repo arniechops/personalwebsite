@@ -6,26 +6,27 @@ import { useEffect, useState } from "react";
 import Typewriter from 'typewriter-effect'
 import SocialsButton from "../components/SocialsButton";
 import { useNavigate } from 'react-router-dom'
+import Modal from "../components/Modal";
+import NavBar from "../components/NavBar";
 
 
 export default function Home() {
 
+  const [modal, setModal] = useState(false);
+
   return (
-    <div className="flex font-mono">
-      <div className="w-30 p-5 fixed h-screen flex flex-col top-0 left-0 justify-center">
-        <SidebarButton icon={<IoIosPerson color="white" width/>} text={"/about"}/>
-        <SidebarButton icon={<IoMdBulb color="white"/>} text={"/projects"}/>
-      </div>
-      <div className="bg-slate-900 h-screen w-screen pl-36 p-5 flex-col">
-        <div className=" ">
-          <span className="text-white relative  h-auto text-2xl capitalize tracking-[0.3em] after:border-b-2
+    <div className="sm:flex font-mono">
+      <div className="bg-slate-900 h-screen w-screen pl-10 sm:pl-36 p-5 flex-col">
+        <div className="hidden sm:block ">
+          <span className="text-white relative h-auto text-2xl capitalize tracking-[0.3em] after:border-b-2
           after:content-[''] after:w-16 after:absolute after:border-slate-600 after:left-0 after:top-full
           after:mt-2">ARNAV<br/>CHOPRA</span>
         </div>
         <div className="flex flex-col justify-center h-[95%]">
+        <NavBar/>
           <div className="w-full">
             <p className="text-2xl text-white">I am a</p>
-              <div id='heading' className="text-white text-[6em] tracking-[0.2em]">
+              <div className="text-white sm:text-[6em] sm:tracking-[0.2em] text-[3.5em] tracking-wider sm:width-auto w-full break-words">
                 <Typewriter
                   options={{
                     strings: ['Software Developer', 'Student', 'Artist'],

@@ -1,11 +1,18 @@
 export const projects = [
     {
         name: 'Shiv and the Microverse',
-        date: '20th September',
+        date: '08.20',
         link: 'google.com',
-        description: `This is a test for a 
-        <a class="text-sky-400 after:content-['_↗'] ..." href="https://www.
-        apple.com/pro-display-xdr/" target="_blank">Pro Display XDR</a>
+        description: `
+        I created Shiv and the Microverse to attempt to bring
+        fore the beauty of particle physics through comic art.
+        It tells the story of a 16-year-old Shiv who journeys from the subatomic
+        world to the cosmos, with the Timekeeper of the Universe.
+        Was mentored by Prof. Raghavan Rangarajan, one of India's leading theoretical physicists
+        and Dean of the Undergraduate College at Ahmedabad University. You can find a kindle
+        version
+        <a class="text-sky-400 ..." href="https://www.
+        apple.com/pro-display-xdr/" target="_blank">here</a>!
         `,
         award: "Masterclass Speaker",
         technologies: [
@@ -15,15 +22,22 @@ export const projects = [
             'https://unsplash.com/photos/FV6Pma5U_98',
             'https://unsplash.com/photos/HzrgJrVYUuk'
         ],
-        width: '32rem'
+        width: '40rem'
     },
     {
         name: 'Shiv and the Microverse',
-        date: 'June 12, 2020',
+        date: '08.20',
         link: 'google.com',
-        description: `This is a test for a 
-        <a class="text-sky-400 after:content-['_↗'] ..." href="https://www.
-        apple.com/pro-display-xdr/" target="_blank">Pro Display XDR</a>
+        description: `
+        I created Shiv and the Microverse to attempt to bring
+        fore the beauty of particle physics through comic art.
+        It tells the story of a 16-year-old Shiv who journeys from the subatomic
+        world to the cosmos, with the Timekeeper of the Universe.
+        Was mentored by Prof. Raghavan Rangarajan, one of India's leading theoretical physicists
+        and Dean of the Undergraduate College at Ahmedabad University. You can find a kindle
+        version
+        <a class="text-sky-400 ..." href="https://www.
+        apple.com/pro-display-xdr/" target="_blank">here</a>!
         `,
         award: "Masterclass Speaker",
         technologies: [
@@ -33,6 +47,6 @@ export const projects = [
             'https://unsplash.com/photos/FV6Pma5U_98',
             'https://unsplash.com/photos/HzrgJrVYUuk'
         ],
-        width: '32rem'
-    }
+        width: '40rem'
+    },
 ]

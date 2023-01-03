@@ -19,7 +19,7 @@ function App() {
         <Projects />
       }></Route>
       <Route path="/about" element={
-        <AboutMe />
+        <Temp />
       }></Route>
     </Routes>
   );
