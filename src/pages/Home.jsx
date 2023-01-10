@@ -26,7 +26,7 @@ export default function Home() {
         <NavBar/>
           <div className="w-full">
             <p className="text-2xl text-white">I am a</p>
-              <div className="text-white sm:text-[6em] sm:tracking-[0.2em] text-[3.5em] tracking-wider sm:width-auto w-full break-words">
+              <div className="text-white lg:text-[6em] md:text-[5em] sm:text-[4em] sm:tracking-[0.2em] text-[3em] tracking-wider sm:width-auto w-full break-words">
                 <Typewriter
                   options={{
                     strings: ['Software Developer', 'Student', 'Artist'],

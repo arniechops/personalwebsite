@@ -6,12 +6,12 @@ export default function SidebarButton({name=null, icon=null, text}) {
     const navigate = useNavigate();
 
     const up = `relative flex items-center justify-center
-    sm:h-16 sm:w-16 h-12 w-12 sm:space-y-20 space-y-10 sm:mx-auto -rotate-90
-    hover:cursor-pointer neumorphic-up sm:group`
+    sm:h-16 sm:w-16 h-12 w-12 sm:space-y-20 space-y-10
+    hover:cursor-pointer neumorphic-up group bg-red-100 relative`
 
     const down = `relative flex items-center justify-center
-    sm:h-16 sm:w-16 h-12 w-12 sm:space-y-20 space-y-10 sm:mx-auto -rotate-90
-    hover:cursor-pointer neumorphic-down sm:group`
+    sm:h-16 sm:w-16 h-12 w-12 sm:space-y-20 space-y-10
+    hover:cursor-pointer neumorphic-down group`
 
     const [mouseDown, setMouseDown] = useState(false)
   return (
@@ -23,15 +23,16 @@ export default function SidebarButton({name=null, icon=null, text}) {
         }}
         onClick={() => navigate(text)}
     >
-      <div className='relative'>
-        <div className='rotate-90 sm:rotate-0'>
-          {icon}
-        </div>
-        <span className="bg-slate-800 text-white rounded-full pl-3 pr-3 p-1 w-auto min-w-max absolute sm:left-24
-          sm:transition-all sm:scale-0 sm:duration-100 sm:position-left sm:group-hover:scale-100 z-20 translate-x-12 -translate-y-6 left-0">
+        {icon}
+        <span className="bg-slate-800 text-white rounded-full pl-3 pr-3 p-1 min-w-max absolute left-24
+          transition-all scale-0 duration-100 group-hover:scale-100 hidden sm:block bottom-4">
             {text}
         </span>
-      </div>
+        <span className="bg-slate-800 text-white rounded-full pl-3 pr-3 p-1 min-w-max absolute
+          sm:hidden
+          -rotate-90 origin-left translate-x-1/2 -translate-y-16">
+            {text}
+        </span>
     </div>
   )
 }
