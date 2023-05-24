@@ -21,6 +21,9 @@ function App() {
       <Route path="/about" element={
         <AboutMe />
       }></Route>
+      <Route path="/temp" element={
+        <Temp />
+      }></Route>
     </Routes>
   );
 }

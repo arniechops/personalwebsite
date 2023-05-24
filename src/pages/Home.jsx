@@ -1,18 +1,11 @@
-import SidebarButton from "../components/SidebarButton";
-import { FaGmai, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { IoIosPerson, IoMdBook, IoMdBulb, IoMdMail } from 'react-icons/io'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
-import { useEffect, useState } from "react";
 import Typewriter from 'typewriter-effect'
 import SocialsButton from "../components/SocialsButton";
-import { useNavigate } from 'react-router-dom'
-import Modal from "../components/Modal";
 import NavBar from "../components/NavBar";
 
 
 export default function Home() {
-
-  const [modal, setModal] = useState(false);
 
   return (
     <div className="sm:flex font-mono">
